@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    @apply bg-brand-grey text-brand-charcoal font-sans;
+    margin: 0;
+    overflow-x: hidden;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-brand-charcoal;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-brand-green text-white font-semibold px-5 py-2.5 rounded-lg hover:bg-green-700 transition-all duration-200 disabled:opacity-60 disabled:cursor-not-allowed min-h-[44px] flex items-center gap-2 justify-center;
+  }
+  .btn-secondary {
+    @apply bg-white text-brand-charcoal font-semibold px-5 py-2.5 rounded-lg border border-brand-charcoal hover:bg-gray-50 transition-all duration-200 disabled:opacity-60 disabled:cursor-not-allowed min-h-[44px] flex items-center gap-2 justify-center;
+  }
+  .btn-danger {
+    @apply bg-red-600 text-white font-semibold px-5 py-2.5 rounded-lg hover:bg-red-700 transition-all duration-200 disabled:opacity-60 disabled:cursor-not-allowed min-h-[44px] flex items-center gap-2 justify-center;
+  }
+  .card {
+    @apply bg-white rounded-xl shadow-sm p-6;
+  }
+  .form-input {
+    @apply w-full border border-gray-300 rounded-lg px-4 py-2.5 text-brand-charcoal focus:outline-none focus:ring-2 focus:ring-brand-green focus:border-transparent transition-all duration-200;
+  }
+  .form-label {
+    @apply block text-sm font-medium text-brand-charcoal mb-1;
+  }
+  .form-error {
+    @apply text-red-600 text-xs mt-1;
+  }
+  .table-header {
+    @apply bg-green-50 text-brand-charcoal uppercase text-xs font-semibold tracking-wider px-4 py-3;
+  }
+  .table-cell {
+    @apply px-4 py-3 text-sm text-brand-charcoal border-b border-gray-100;
+  }
+  .page-title {
+    @apply text-2xl font-bold text-brand-charcoal;
+  }
+  .section-title {
+    @apply text-xl font-semibold text-brand-charcoal;
+  }
+  /* Loading spinner */
+  .spinner {
+    @apply animate-spin rounded-full border-2 border-white border-t-transparent w-4 h-4;
+  }
+  .spinner-dark {
+    @apply animate-spin rounded-full border-2 border-brand-charcoal border-t-transparent w-4 h-4;
+  }
+}
