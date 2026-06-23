@@ -42,7 +42,7 @@ export default function MemberDetailsPage() {
 
       setMember(data)
 
-      // Load supplementary data in parallel
+      // Supplementary data load in parallel
       const [payRes, benRes, auditRes] = await Promise.all([
         getMemberPaymentSummary(data.id),
         getMemberBeneficiaryCount(data.id),
