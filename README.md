@@ -2,7 +2,7 @@ Burial Society Management System (BSMS)
 A cloud-based web application developed for Pfukani Magaza Burial Society — a Non-Profit Organisation based in Limpopo, South Africa. The system digitises member management, payment tracking, beneficiary records, burial claims processing, and financial reporting.
 
 Live Demo
-Deployed on Vercel: https://bsms-pfukani.vercel.app
+Deployed on Vercel: https://pfukani-magaza.vercel.app/
 
 Problem Statement
 Pfukani Magaza Burial Society manages member contributions and burial benefits for its community. The existing manual process relies on paper files and spreadsheets, leading to:
@@ -71,7 +71,6 @@ System Architecture
 │ └──────────┘ └──────────┘ └──────────┘ │
 └─────────────────────────────────────────────────────┘
 
-text
 
 
 ---
@@ -101,7 +100,6 @@ bsms/
 ├── package.json # Dependencies and scripts
 └── README.md # This file
 
-text
 
 
 ---
@@ -125,7 +123,6 @@ text
 Submitted → Under Review → Approved → Paid
 └──→ Rejected (with reason)
 
-text
 
 
 ### Row Level Security
